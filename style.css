@@ -7,42 +7,58 @@
 body {
     background-color: black;
     color: white;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Concert One', cursive;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    position: relative;
 }
 
 .site-title {
-    float: left;
-    margin-left: 20px;
-    font-size: 2.5em;
+    font-size: 3em;
     color: white;
 }
 
 nav {
-    float: right;
-    margin-right: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .menu-btn {
-    background-color: #333;
-    color: white;
+    background-color: transparent;
     border: none;
+    color: white;
     font-size: 2em;
     cursor: pointer;
 }
 
 .dropdown {
     display: none;
-    list-style: none;
-    margin-top: 10px;
+    list-style-type: none;
+    padding: 10px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
-nav ul li {
+.dropdown li {
     margin: 10px 0;
 }
 
-nav ul li a {
+.dropdown li a {
     color: white;
     text-decoration: none;
+}
+
+.dropdown li a:hover {
+    text-decoration: underline;
 }
 
 .styled-button {
@@ -86,4 +102,9 @@ footer {
 @keyframes fadeStar {
     0%, 100% { opacity: 0; }
     50% { opacity: 1; }
+}
+
+/* Show dropdown on button click */
+.show {
+    display: block;
 }
