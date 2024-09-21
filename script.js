@@ -12,3 +12,4 @@ for (let i = 0; i < 100; i++) {
     star.style.animationDuration = `${Math.random() * 10 + 5}s`;
     starContainer.appendChild(star);
 }
+
